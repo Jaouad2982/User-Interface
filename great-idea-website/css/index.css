@@ -1,6 +1,6 @@
 /* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
+v2.0 | 20110126
+License: none (public domain)
 */
 
 html, body, div, span, applet, object, iframe,
@@ -16,35 +16,35 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: block;
+    display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
 }
 ol, ul {
-	list-style: none;
+    list-style: none;
 }
 blockquote, q {
-	quotes: none;
+    quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+    content: '';
+    content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 /* Set every element's box-sizing to border-box */
@@ -64,3 +64,120 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Your code starts here! */
+
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    margin:100px 100px auto;
+
+}
+/* header stle .......*/
+
+.container header {
+    position: relative;
+}
+
+.container img {
+    display: inline-block;
+}
+
+.container header nav{
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+
+header {
+    background-color: rgb(204, 204, 255);
+       
+}
+
+nav a{
+    margin: 0px 60px 40px 0px;
+    text-decoration: none;
+    color: grey;
+}
+
+/*first section style......*/
+
+div .ondemand{
+    position:relative;
+    height: 400px;
+}
+div h1  {
+    display: inline-block;
+    font-size: 90px;
+    margin-left: 60px;
+    margin-top: 30px;
+}
+
+.btn{
+    margin-left:120px;
+    font-size: 22px;
+    border-radius: 10px;
+}
+
+div .firstpic{
+    display: inline-block;
+    position: absolute;
+    top: 5px;
+    right: 0;
+
+}
+/*General styling ...*/
+
+h2{
+    font-family: 'Spicy Rice', cursive;
+    font-size: 30px;
+}
+
+a:hover{
+   background-color: rgb(6, 13, 19);
+}
+
+/*first paragraph styling.....*/
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 200px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.sectionone:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*image css ....*/
+
+.middle-img{
+    width: 100%;
+}
+
+/*second paraggraph styling..*/
+
+.columntwo {
+    float: left;
+    width: 33.33333%;
+    padding: 10px;
+    height: 200px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.sectiontwo:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*footer ...*/
+.copy{
+    text-align: center;
+    margin: 40px 40px;
+}
